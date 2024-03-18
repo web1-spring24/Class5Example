@@ -1,7 +1,9 @@
 body {
     font-family: "Nunito", sans-serif;
 }
-
+/* navigation */
+/*  */
+/*  */
 nav {
     background-color: teal; 
     display: flex;
@@ -49,4 +51,86 @@ nav {
 
 #main-menu .sub-menu:hover .dropdown {
     display: block;
+}
+
+/* squares */
+
+.square {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-square {
+    background-color: firebrick;
+    color: white;
+}
+
+.green-square {
+    background-color: green;
+    border-radius: 5px;
+}
+
+.yellow-square {
+    background-color: yellow;
+    border-color: orange;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.blue-square {
+    background-color: blue;
+    color:white;
+}
+
+/* welcome section */
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 600px;
+    width: 70%;
+    align-items: center;
+    margin: 100px auto;
+}
+
+#welcome .red-square {
+    flex: 2; 
+    height: 600px;
+}
+
+#welcome .welcome-text {
+    flex: 1;
+}
+
+/* showcase section */
+
+#showcase > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 600px;
+    gap: 50px;
+}
+
+#showcase .yellow-square {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+#showcase .green-square {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#showcase .red-square {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#showcase {
+    width: 70%;
+    margin: 50px auto;
 }
